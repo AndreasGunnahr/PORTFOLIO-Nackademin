@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:900&display=swap');
+
+/*       My variable overrides      */
+$bg-icons: rgba(250, 250, 250, 0.15);
+$bg-sidebar: #202020;
+$bg: #181818;
+$primary: #00C896;
+$white: #ffffff;
+$shadeWhite: #F2ECFF;
+$font: 'Karla', sans-serif;
+$font-2: 'Titillium Web', sans-serif;
+
+html{
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+%flex-center-row{
+    display: flex;
+    justify-content: center;
+}  
+
+%flex-center-column{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
