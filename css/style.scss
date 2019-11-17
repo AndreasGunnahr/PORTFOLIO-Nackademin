@@ -13,6 +13,10 @@
 }
 
 /* Bootstrap override - start */
+::-webkit-scrollbar {
+    display: none;
+}
+
 .top__bar {
     display: none;
 }
@@ -22,16 +26,20 @@
     color: $primary !important;
 }
 
+// Navbar - start
 .navbar {
     background: $bg-sidebar;
+    z-index: 99;
 
-    li {
+    .nav-item {
         display: flex;
         margin-left: 10px;
         flex-direction: column;
+
         .nav-link {
             color: $white;
             font-size: 1rem;
+
             span {
                 font-family: $font;
                 margin-left: 10px;
@@ -86,6 +94,9 @@
     }
 }
 
+// Navbar - End
+
+// Sidebar - Start
 .sidebar {
     @extend %flex-center-column;
     height: 100vh;
@@ -97,10 +108,20 @@
         align-items: center;
 
         .nav-link {
+            text-align: center;
             color: $white;
             font-size: 1.5rem;
-            padding: 15px;
+            padding: 20px 15px 20px 15px;
             color: $bg-icons;
+
+            span {
+                text-align: center;
+                display: flex;
+                font-family: $font;
+                font-size: 1rem;
+                margin-top: 2px;
+                letter-spacing: 1px;
+            }
         }
     }
 
@@ -127,6 +148,9 @@
     }
 }
 
+// Sidebar - End
+
+//Hero section - Start
 #hero__section {
     height: 100vh;
     background: url("/img/morse.jpg") rgba(0, 0, 0, 0.3);
@@ -144,11 +168,14 @@
         font-size: 1.5rem;
 
         .dropdown-toggle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background: transparent;
             color: $white;
             letter-spacing: 1px;
             width: 200px;
-            height: 40px;
+            height: 50px;
         }
 
         .dropdown-menu {
@@ -191,9 +218,9 @@
 
             .hero__span {
                 margin-left: 10px;
-                color: $shadeWhite;
+                color: $white;
                 font-size: .9rem;
-                font-weight: 100;
+                font-weight: 500;
                 letter-spacing: 2px;
             }
         }
@@ -231,6 +258,9 @@
     }
 }
 
+//Hero section - End
+
+//About section - Start
 #about__section {
     height: 100vh;
     background-color: $bg;
@@ -260,6 +290,7 @@
 
             .button__container {
                 width: 100%;
+
                 .btn {
                     color: $white;
                     letter-spacing: 1px;
@@ -282,7 +313,7 @@
             .info__container {
                 margin-top: 20px;
                 height: 350px;
-                width: 80%;
+                width: 70%;
                 line-height: 25px;
 
                 .about__container {
@@ -291,7 +322,7 @@
                     span {
                         color: $white;
                         font-weight: 100;
-                        font-size: .9rem;
+                        font-size: 1rem;
                         letter-spacing: 1px;
                     }
                 }
@@ -341,9 +372,10 @@
                             }
 
                             .school__date {
-                                font-size: 0.9rem;
+                                font-size: 0.8rem;
                                 font-style: italic;
                                 letter-spacing: 1px;
+                                font-weight: 100 !important;
                             }
                         }
                     }
@@ -353,8 +385,8 @@
             .download {
                 padding: 15px;
                 margin-top: 20px;
-                background: black;
-                color: $primary;
+                color: white;
+                background: $primary;
                 font-family: $font;
                 font-size: 0.9rem;
                 font-weight: 300;
@@ -362,15 +394,16 @@
                 text-decoration: none;
 
                 &:hover {
-                    background: $primary;
-                    color: white;
+                    background: black;
                 }
             }
         }
     }
 }
 
+//About section - End
 
+//Portfolio section - Start
 #code__section {
     height: 1005px;
     background: url("/img/morse.jpg") rgba(0, 0, 0, 0.3);
@@ -451,6 +484,7 @@
                         justify-content: center;
                         color: $white;
                         font-size: 1rem;
+                        font-weight: 500;
                         margin: 0 10px 10px 0;
                         z-index: 20;
                         opacity: 1;
@@ -534,6 +568,8 @@
     }
 }
 
+//Portfolio section - End
+//Contact section - Start
 #contact__section {
     height: 100vh;
     background-color: $bg;
@@ -628,7 +664,9 @@
     }
 }
 
+//Contact section - End
 
+//Media quires 425px and down
 @media (max-width: 425px) {
     .sidebar {
         display: none;
@@ -697,17 +735,19 @@
     }
 
     #about__section {
+        height: 800px;
+
         .row {
             .img__col {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
 
                 .image {
-                    margin-top: 20px;
                     height: 200px;
                     width: 200px;
+                    margin-top: 20px;
                 }
             }
 
@@ -736,7 +776,7 @@
                             margin: 0;
 
                             li {
-                                margin-bottom: 10px;
+                                margin-bottom: 20px;
 
                                 i {
                                     font-size: 1.5rem;
@@ -752,10 +792,8 @@
                             margin: 0;
 
                             li {
-                                margin-bottom: 10px;
-
                                 .degree {
-                                    font-size: 1rem;
+                                    font-size: 1.1rem;
                                 }
 
                                 .school__date {
@@ -772,11 +810,11 @@
 
                 .button__container {
                     width: initial;
-                    margin-top: 20px;
+                    margin-top: -300px;
 
                     .btn {
                         padding: 10px;
-                        font-size: 0.7rem;
+                        font-size: 0.8rem;
                     }
                 }
 
@@ -946,6 +984,7 @@
     }
 }
 
+//Media quires 425px and up to 768px
 @media (min-width: 425px) and (max-width: 768px) {
     .top__bar {
         display: block;
@@ -1070,7 +1109,7 @@
 
                 .button__container {
                     width: initial;
-                    margin-top: 20px;
+                    margin-top: -200px;
 
                     .btn {
                         padding: 10px;
@@ -1237,13 +1276,14 @@
     }
 }
 
+//Media quires 687px and up to 991px
 @media (min-width: 687px) and (max-width: 991px) {
     #code__section {
         height: 1200px;
     }
 }
 
-
+//Media quires 768px and up to 991px
 @media (min-width: 768px) and (max-width: 991px) {
     .sidebar {
         display: flex;
@@ -1363,7 +1403,8 @@
 
                 .button__container {
                     width: initial;
-                    margin-top: 25px;
+
+                    margin-top: -120px;
 
                     .btn {
                         padding: 10px;
@@ -1528,10 +1569,24 @@
 
 }
 
+//Media quires 992px and up to 1321px
 @media (min-width: 992px) and (max-width: 1321px) {
     #code__section {
         height: 1400px;
     }
+}
 
+//Media quires 1321px and down.
+@media (max-width: 1321px) {
+    .sidebar {
+        .nav {
+            .nav-link {
+                font-size: 1.2rem;
 
+                span {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
 }

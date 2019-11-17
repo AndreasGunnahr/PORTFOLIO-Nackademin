@@ -1,0 +1,17 @@
+Chose to implement the following accessibility requirements in my project:
+
+    *   1.1.1 Non-text content - Chose to use this requirement in my side navigation and top navigation. 
+        By applying text to the icon, the user can more easily know what the icon refers to.
+
+    *   1.4.1 Use of Color - Chose to use this requirement on navigation, buttons and my contact form. 
+        By changing the presentation of our user interface component when it received focus or being hovered. We also use an active class for our navigation so that the user can more easily see where he / she is on the website
+
+    *   1.4.3 Contrast - Chose to try to use this requirement throughout the website.
+        By setting color contrasts between the different sections of the website. But also by setting contrasts by color, size and font style on headings, buttons and plain text. 
+
+    *   1.4.5 Images of Text - Chose to use this requirement on the "About me" section.
+        Throughout the web site I used letter spacing to make it easier for the user to follow and read the text better.
+        Also tried to make it easy for the user by not showing up too much text, but instead displaying "one image" at a time.
+
+    *   3.2.1 On Focus - Chose to use this requirement throughout the entire website. 
+        By checking that no events or events occur if the user uses focus, we minimize the risk of misunderstanding. We have also done so if the user focuses on a component further down the website, we automatically scroll there. This way, the user knows where they are all the time.

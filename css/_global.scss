@@ -7,11 +7,11 @@ $bg-sidebar: #202020;
 $bg: #181818;
 $primary: #00C896;
 $white: #ffffff;
-$shadeWhite: #F2ECFF;
-$font: 'Karla', sans-serif;
-$font-2: 'Titillium Web', sans-serif;
+$font: 'Karla',
+sans-serif;
 
-html{
+
+html {
     font-size: 16px;
 }
 
@@ -22,20 +22,19 @@ html{
     text-decoration: none;
 }
 
-%flex-center-row{
+%flex-center-row {
     display: flex;
     justify-content: center;
-}  
+}
 
-%flex-center-column{
-    display: flex; 
+%flex-center-column {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-%flex-column{
+%flex-column {
     display: flex;
     flex-direction: column;
 }
-

@@ -9686,6 +9686,10 @@ h3 {
 }
 
 /* Bootstrap override - start */
+::-webkit-scrollbar {
+  display: none;
+}
+
 .top__bar {
   display: none;
 }
@@ -9697,21 +9701,22 @@ h3 {
 
 .navbar {
   background: #202020;
+  z-index: 99;
 }
-.navbar li {
+.navbar .nav-item {
   display: flex;
   margin-left: 10px;
   flex-direction: column;
 }
-.navbar li .nav-link {
+.navbar .nav-item .nav-link {
   color: #ffffff;
   font-size: 1rem;
 }
-.navbar li .nav-link span {
+.navbar .nav-item .nav-link span {
   font-family: "Karla", sans-serif;
   margin-left: 10px;
 }
-.navbar li .nav-link:hover {
+.navbar .nav-item .nav-link:hover {
   color: #00C896;
 }
 .navbar .dropdown {
@@ -9757,10 +9762,19 @@ h3 {
   align-items: center;
 }
 .sidebar .nav .nav-link {
+  text-align: center;
   color: #ffffff;
   font-size: 1.5rem;
-  padding: 15px;
+  padding: 20px 15px 20px 15px;
   color: rgba(250, 250, 250, 0.15);
+}
+.sidebar .nav .nav-link span {
+  text-align: center;
+  display: flex;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  margin-top: 2px;
+  letter-spacing: 1px;
 }
 .sidebar .social__icons {
   position: absolute;
@@ -9798,11 +9812,14 @@ h3 {
   font-size: 1.5rem;
 }
 #hero__section .dropdown .dropdown-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: transparent;
   color: #ffffff;
   letter-spacing: 1px;
   width: 200px;
-  height: 40px;
+  height: 50px;
 }
 #hero__section .dropdown .dropdown-menu {
   color: #ffffff;
@@ -9838,9 +9855,9 @@ h3 {
 }
 #hero__section .hero__container .hero__text .hero__span {
   margin-left: 10px;
-  color: #F2ECFF;
+  color: #ffffff;
   font-size: 0.9rem;
-  font-weight: 100;
+  font-weight: 500;
   letter-spacing: 2px;
 }
 #hero__section .hero__container .btn {
@@ -9914,7 +9931,7 @@ h3 {
 #about__section .row .info__col .info__container {
   margin-top: 20px;
   height: 350px;
-  width: 80%;
+  width: 70%;
   line-height: 25px;
 }
 #about__section .row .info__col .info__container .about__container {
@@ -9923,7 +9940,7 @@ h3 {
 #about__section .row .info__col .info__container .about__container span {
   color: #ffffff;
   font-weight: 100;
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: 1px;
 }
 #about__section .row .info__col .info__container .skills__container {
@@ -9966,15 +9983,16 @@ h3 {
   letter-spacing: 1px;
 }
 #about__section .row .info__col .info__container .education__container ul li .school__date {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-style: italic;
   letter-spacing: 1px;
+  font-weight: 100 !important;
 }
 #about__section .row .info__col .download {
   padding: 15px;
   margin-top: 20px;
-  background: black;
-  color: #00C896;
+  color: white;
+  background: #00C896;
   font-family: "Karla", sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
@@ -9982,8 +10000,7 @@ h3 {
   text-decoration: none;
 }
 #about__section .row .info__col .download:hover {
-  background: #00C896;
-  color: white;
+  background: black;
 }
 
 #code__section {
@@ -10058,6 +10075,7 @@ h3 {
   justify-content: center;
   color: #ffffff;
   font-size: 1rem;
+  font-weight: 500;
   margin: 0 10px 10px 0;
   z-index: 20;
   opacity: 1;
@@ -10250,16 +10268,19 @@ h3 {
     font-size: 1.5rem;
   }
 
+  #about__section {
+    height: 800px;
+  }
   #about__section .row .img__col {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   #about__section .row .img__col .image {
-    margin-top: 20px;
     height: 200px;
     width: 200px;
+    margin-top: 20px;
   }
   #about__section .row .info__col {
     display: flex;
@@ -10284,7 +10305,7 @@ h3 {
     margin: 0;
   }
   #about__section .row .info__col .info__container .skills__container ul li {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   #about__section .row .info__col .info__container .skills__container ul li i {
     font-size: 1.5rem;
@@ -10295,11 +10316,8 @@ h3 {
   #about__section .row .info__col .info__container .education__container ul {
     margin: 0;
   }
-  #about__section .row .info__col .info__container .education__container ul li {
-    margin-bottom: 10px;
-  }
   #about__section .row .info__col .info__container .education__container ul li .degree {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   #about__section .row .info__col .info__container .education__container ul li .school__date {
     font-size: 0.7rem;
@@ -10309,11 +10327,11 @@ h3 {
   }
   #about__section .row .info__col .button__container {
     width: initial;
-    margin-top: 20px;
+    margin-top: -300px;
   }
   #about__section .row .info__col .button__container .btn {
     padding: 10px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   #code__section {
@@ -10540,7 +10558,7 @@ h3 {
   }
   #about__section .row .info__col .button__container {
     width: initial;
-    margin-top: 20px;
+    margin-top: -200px;
   }
   #about__section .row .info__col .button__container .btn {
     padding: 10px;
@@ -10763,7 +10781,7 @@ h3 {
   }
   #about__section .row .info__col .button__container {
     width: initial;
-    margin-top: 25px;
+    margin-top: -120px;
   }
   #about__section .row .info__col .button__container .btn {
     padding: 10px;
@@ -10887,6 +10905,14 @@ h3 {
 @media (min-width: 992px) and (max-width: 1321px) {
   #code__section {
     height: 1400px;
+  }
+}
+@media (max-width: 1321px) {
+  .sidebar .nav .nav-link {
+    font-size: 1.2rem;
+  }
+  .sidebar .nav .nav-link span {
+    font-size: 0.8rem;
   }
 }
 
