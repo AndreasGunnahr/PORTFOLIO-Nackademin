@@ -10558,7 +10558,7 @@ h3 {
   }
   #about__section .row .info__col .button__container {
     width: initial;
-    margin-top: -200px;
+    margin-top: 20px;
   }
   #about__section .row .info__col .button__container .btn {
     padding: 10px;
@@ -10781,7 +10781,7 @@ h3 {
   }
   #about__section .row .info__col .button__container {
     width: initial;
-    margin-top: -120px;
+    margin-top: 20px;
   }
   #about__section .row .info__col .button__container .btn {
     padding: 10px;
