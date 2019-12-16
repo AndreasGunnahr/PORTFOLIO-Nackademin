@@ -9797,7 +9797,7 @@ h3 {
 
 #hero__section {
   height: 100vh;
-  background: url("/img/morse.jpg") rgba(0, 0, 0, 0.3);
+  background: url("../img/morse.jpg") rgba(0, 0, 0, 0.3);
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
@@ -9900,7 +9900,7 @@ h3 {
   padding: 0;
 }
 #about__section .row .img__col .image {
-  background: url("/img/man.jpg");
+  background: url("../img/man.jpg");
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -10005,7 +10005,7 @@ h3 {
 
 #code__section {
   height: 1005px;
-  background: url("/img/morse.jpg") rgba(0, 0, 0, 0.3);
+  background: url("../img/morse.jpg") rgba(0, 0, 0, 0.3);
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
@@ -10113,13 +10113,13 @@ h3 {
   margin: 0 0 10px 10px;
 }
 #code__section .code__container .portfolio-item .item:nth-child(1) {
-  background: url("/img/quiz.png") rgba(0, 0, 0, 0.35);
+  background: url("../img/quiz.png") rgba(0, 0, 0, 0.35);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
 }
 #code__section .code__container .portfolio-item .item:nth-child(2) {
-  background: url("/img/project-2.png");
+  background: url("../img/project-2.png");
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
