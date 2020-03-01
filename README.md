@@ -1,6 +1,6 @@
 # Project Title
 
-Portfolio
+Portfolio - javascript course in school
 
 ## Getting Started
 
