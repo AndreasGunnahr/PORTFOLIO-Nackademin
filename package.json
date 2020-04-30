@@ -18,7 +18,7 @@
   "homepage": "https://github.com/AndreasGunnahr/portfolio-school#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "node": "^13.3.0"
   }
 }
